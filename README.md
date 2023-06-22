@@ -69,3 +69,71 @@ galien@galien-HP-EliteBook-Folio-9470m:~/Gym Rwanda/gym-git$ git push origin --d
 To https://github.com/Muhindo-Galien/Gym-git.git
  - [deleted]         test
 ```
+### Exercice 2
+```bash
+galien@galien-HP-EliteBook-Folio-9470m:~/Gym Rwanda/gym-git$ git add .
+galien@galien-HP-EliteBook-Folio-9470m:~/Gym Rwanda/gym-git$ git stash 
+Saved working directory and index state WIP on dev: 80c5e81 init exercise 1
+galien@galien-HP-EliteBook-Folio-9470m:~/Gym Rwanda/gym-git$ git add .
+galien@galien-HP-EliteBook-Folio-9470m:~/Gym Rwanda/gym-git$ git stash 
+Saved working directory and index state WIP on dev: 80c5e81 init exercise 1
+galien@galien-HP-EliteBook-Folio-9470m:~/Gym Rwanda/gym-git$ git add .
+galien@galien-HP-EliteBook-Folio-9470m:~/Gym Rwanda/gym-git$ git stash 
+Saved working directory and index state WIP on dev: 80c5e81 init exercise 1
+galien@galien-HP-EliteBook-Folio-9470m:~/Gym Rwanda/gym-git$ git stash list
+stash@{0}: WIP on dev: 80c5e81 init exercise 1
+stash@{1}: WIP on dev: 80c5e81 init exercise 1
+stash@{2}: WIP on dev: 80c5e81 init exercise 1
+galien@galien-HP-EliteBook-Folio-9470m:~/Gym Rwanda/gym-git$ git stash pop stash@{1}
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   about.html
+
+Dropped stash@{1} (fe439f994512cc825906ae0bf49e76f9e253bbc5)
+galien@galien-HP-EliteBook-Folio-9470m:~/Gym Rwanda/gym-git$ git stash pop stash@{1}
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   about.html
+        new file:   home.html
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   README.md
+
+Dropped stash@{1} (390d4867713ff67327f364010f77e7cd09ceaaef)
+galien@galien-HP-EliteBook-Folio-9470m:~/Gym Rwanda/gym-git$ git add .
+galien@galien-HP-EliteBook-Folio-9470m:~/Gym Rwanda/gym-git$ git commit -m "added home and about page"
+[dev e56ad50] added home and about page
+ 3 files changed, 25 insertions(+), 1 deletion(-)
+ create mode 100644 about.html
+ create mode 100644 home.html
+galien@galien-HP-EliteBook-Folio-9470m:~/Gym Rwanda/gym-git$ git push origin dev
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 611 bytes | 611.00 KiB/s, done.
+Total 5 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/Muhindo-Galien/Gym-git.git
+   80c5e81..e56ad50  dev -> dev
+galien@galien-HP-EliteBook-Folio-9470m:~/Gym Rwanda/gym-git$ git stash pop stash@{0}
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   team.html
+
+Dropped stash@{0} (6d55fccfaa94430a1b7490f2d730471064c4f4f0)
+galien@galien-HP-EliteBook-Folio-9470m:~/Gym Rwanda/gym-git$ git reset --hard
+HEAD is now at e56ad50 added home and about page
+galien@galien-HP-EliteBook-Folio-9470m:~/Gym Rwanda/gym-git$ 
+```
