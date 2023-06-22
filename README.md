@@ -137,3 +137,31 @@ galien@galien-HP-EliteBook-Folio-9470m:~/Gym Rwanda/gym-git$ git reset --hard
 HEAD is now at e56ad50 added home and about page
 galien@galien-HP-EliteBook-Folio-9470m:~/Gym Rwanda/gym-git$ 
 ```
+## Bundle 2
+### Exercice 1
+
+```bash
+galien@galien-HP-EliteBook-Folio-9470m:~/Gym Rwanda/gym-git$ touch services.html
+galien@galien-HP-EliteBook-Folio-9470m:~/Gym Rwanda/gym-git$ git add .
+galien@galien-HP-EliteBook-Folio-9470m:~/Gym Rwanda/gym-git$ 'git commit -m "services page added"
+> '^Ct commit -m "services page added"
+galien@galien-HP-EliteBook-Folio-9470m:~/Gym Rwanda/gym-git$ git commit -m "services page added"
+[ft/bundle-2 ad6a3ca] services page added
+ 1 file changed, 12 insertions(+)
+ create mode 100644 services.html
+galien@galien-HP-EliteBook-Folio-9470m:~/Gym Rwanda/gym-git$ git push origin ft/bundle-2 
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 465 bytes | 465.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
+remote:      https://github.com/Muhindo-Galien/Gym-git/pull/new/ft/bundle-2
+remote: 
+To https://github.com/Muhindo-Galien/Gym-git.git
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
+galien@galien-HP-EliteBook-Folio-9470m:~/Gym Rwanda/gym-git$ 
+```
